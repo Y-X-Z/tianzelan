@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCewmViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ql5-Ft-pXk">
+                    <rect key="frame" x="0.0" y="87" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KeC-HK-XwM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ti-l7-wkX">
+                    <rect key="frame" x="16" y="55" width="44" height="22"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="UVE-qs-pSr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传二维码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-OE-QZF">
+                    <rect key="frame" x="144.66666666666666" y="58" width="87" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="3Ed-3s-ZpP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsV-kQ-uWI">
+                    <rect key="frame" x="32.666666666666657" y="462" width="310" height="55"/>
+                    <state key="normal" image="scewm"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的微信二维码将显示您下属店主的APP中请上传二维码，便于新店主与您取得联系" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-qq-KNz">
+                    <rect key="frame" x="22" y="96" width="330" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="ixI-jB-ekZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.85882352941176465" green="0.25098039215686274" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.9" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-TW-3p4">
+                    <rect key="frame" x="13" y="152" width="350" height="295"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="295" id="mZC-HU-49t"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sjh-qq-KNz" firstAttribute="top" secondItem="Ql5-Ft-pXk" secondAttribute="bottom" constant="8" symbolic="YES" id="DcM-Ay-lfL"/>
+                <constraint firstItem="Sdl-TW-3p4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="Eai-Th-Se7"/>
+                <constraint firstItem="2Ti-l7-wkX" firstAttribute="centerY" secondItem="aUa-OE-QZF" secondAttribute="centerY" id="GrY-Bt-5dm"/>
+                <constraint firstItem="QsV-kQ-uWI" firstAttribute="top" secondItem="Sdl-TW-3p4" secondAttribute="bottom" constant="15" id="Kb9-Cv-Q7U"/>
+                <constraint firstItem="2Ti-l7-wkX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="TyT-LA-Ao1"/>
+                <constraint firstItem="Ql5-Ft-pXk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VOa-4Z-AyQ"/>
+                <constraint firstItem="Ql5-Ft-pXk" firstAttribute="centerX" secondItem="Sjh-qq-KNz" secondAttribute="centerX" id="YIl-sS-ZGE"/>
+                <constraint firstItem="Sjh-qq-KNz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="22" id="aaW-xL-OsS"/>
+                <constraint firstItem="Ql5-Ft-pXk" firstAttribute="top" secondItem="2Ti-l7-wkX" secondAttribute="bottom" constant="10" id="duT-Im-jzX"/>
+                <constraint firstItem="Sdl-TW-3p4" firstAttribute="centerX" secondItem="Ql5-Ft-pXk" secondAttribute="centerX" id="gDc-bQ-aVb"/>
+                <constraint firstItem="2Ti-l7-wkX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="11" id="hhn-lZ-lIh"/>
+                <constraint firstItem="Sdl-TW-3p4" firstAttribute="centerX" secondItem="QsV-kQ-uWI" secondAttribute="centerX" id="ir5-GD-2Cg"/>
+                <constraint firstItem="Sdl-TW-3p4" firstAttribute="top" secondItem="Sjh-qq-KNz" secondAttribute="bottom" constant="19" id="tkW-tz-Fz8"/>
+                <constraint firstAttribute="trailing" secondItem="Ql5-Ft-pXk" secondAttribute="trailing" id="yHK-Iu-Hc0"/>
+                <constraint firstItem="aUa-OE-QZF" firstAttribute="centerX" secondItem="Ql5-Ft-pXk" secondAttribute="centerX" id="zaV-gw-JuA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="21" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="44" height="22"/>
+        <image name="no_image.9" width="130" height="130"/>
+        <image name="scewm" width="310" height="55"/>
+    </resources>
+</document>

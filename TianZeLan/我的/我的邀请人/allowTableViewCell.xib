@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="allowTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon0" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-1B-4vE">
+                        <rect key="frame" x="10" y="9" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ZFi-c2-sKV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1231312312311" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMi-N9-RA8">
+                        <rect key="frame" x="60" y="11" width="116" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册日期:2018-05-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orv-4k-uiX">
+                        <rect key="frame" x="60" y="34" width="124" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥5.21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fg-Tc-zre">
+                        <rect key="frame" x="268" y="21" width="52" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG5-16-ubT">
+                        <rect key="frame" x="220" y="21" width="34" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="XjT-w7-yZf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Fg-Tc-zre" secondAttribute="trailing" id="DYQ-5g-h2N"/>
+                    <constraint firstItem="TG5-16-ubT" firstAttribute="leading" secondItem="orv-4k-uiX" secondAttribute="trailing" constant="36" id="FgW-gK-FL2"/>
+                    <constraint firstItem="pMi-N9-RA8" firstAttribute="leading" secondItem="3MF-1B-4vE" secondAttribute="trailing" constant="10" id="G1d-31-9No"/>
+                    <constraint firstItem="3MF-1B-4vE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jpy-u0-A2K"/>
+                    <constraint firstItem="TG5-16-ubT" firstAttribute="centerY" secondItem="3MF-1B-4vE" secondAttribute="centerY" id="MwV-Ol-e2I"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TG5-16-ubT" secondAttribute="trailing" constant="50" id="Nn6-Ax-oDv"/>
+                    <constraint firstItem="3MF-1B-4vE" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Rgo-oE-5bu"/>
+                    <constraint firstItem="7Fg-Tc-zre" firstAttribute="leading" secondItem="TG5-16-ubT" secondAttribute="trailing" constant="14" id="b7Z-fC-TFQ"/>
+                    <constraint firstItem="3MF-1B-4vE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="dHg-Kw-a4v"/>
+                    <constraint firstItem="pMi-N9-RA8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dyK-Qg-2P1"/>
+                    <constraint firstItem="7Fg-Tc-zre" firstAttribute="firstBaseline" secondItem="TG5-16-ubT" secondAttribute="firstBaseline" id="hi6-hs-V01"/>
+                    <constraint firstItem="3MF-1B-4vE" firstAttribute="bottom" secondItem="orv-4k-uiX" secondAttribute="bottom" id="kiR-2a-0oU"/>
+                    <constraint firstItem="pMi-N9-RA8" firstAttribute="leading" secondItem="orv-4k-uiX" secondAttribute="leading" id="mvZ-VH-7Cf"/>
+                    <constraint firstItem="7Fg-Tc-zre" firstAttribute="centerY" secondItem="TG5-16-ubT" secondAttribute="centerY" id="pzS-2a-tVZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="content" destination="pMi-N9-RA8" id="6tU-8W-Q7v"/>
+                <outlet property="headimagev" destination="3MF-1B-4vE" id="ajW-MD-FOt"/>
+                <outlet property="input" destination="7Fg-Tc-zre" id="DeJ-Mb-pQ2"/>
+                <outlet property="numberper" destination="TG5-16-ubT" id="6Nu-cr-hSL"/>
+                <outlet property="timelabel" destination="orv-4k-uiX" id="1JQ-wb-cJJ"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="-14"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon0" width="40" height="40"/>
+    </resources>
+</document>

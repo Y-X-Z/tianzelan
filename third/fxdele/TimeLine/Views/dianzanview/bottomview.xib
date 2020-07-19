@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="bottomview">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPA-8W-MWf">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Igu-BL-QwJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="10" image="zan">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7U-ii-ztQ">
+                    <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="13" image="reply">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-17-Bqj">
+                    <rect key="frame" x="96" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="P0e-Vl-P3p"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="share"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U7U-ii-ztQ" firstAttribute="centerY" secondItem="lVx-17-Bqj" secondAttribute="centerY" id="B9M-OD-4Zs"/>
+                <constraint firstItem="lVx-17-Bqj" firstAttribute="leading" secondItem="U7U-ii-ztQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Gsb-Rk-BPX"/>
+                <constraint firstItem="GPA-8W-MWf" firstAttribute="baseline" secondItem="U7U-ii-ztQ" secondAttribute="firstBaseline" id="M3K-CI-R48"/>
+                <constraint firstItem="GPA-8W-MWf" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NLD-pm-40R"/>
+                <constraint firstItem="GPA-8W-MWf" firstAttribute="top" secondItem="U7U-ii-ztQ" secondAttribute="top" id="R1q-9z-jGz"/>
+                <constraint firstItem="U7U-ii-ztQ" firstAttribute="leading" secondItem="GPA-8W-MWf" secondAttribute="trailing" constant="8" symbolic="YES" id="Rde-ZM-e1b"/>
+                <constraint firstItem="GPA-8W-MWf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="YZY-FC-xRp"/>
+                <constraint firstItem="GPA-8W-MWf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dzh-An-PLE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lVx-17-Bqj" secondAttribute="trailing" constant="4" id="lXB-Ie-EO6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="replybtn" destination="U7U-ii-ztQ" id="pLu-mC-nxf"/>
+                <outlet property="sharebtn" destination="lVx-17-Bqj" id="qsE-dG-KaN"/>
+                <outlet property="zanbtn" destination="GPA-8W-MWf" id="0xt-cF-5PH"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="-70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reply" width="16" height="16"/>
+        <image name="share" width="20" height="20"/>
+        <image name="zan" width="13" height="14"/>
+    </resources>
+</document>

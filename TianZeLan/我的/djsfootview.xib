@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="djsfootview">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxU-cw-bl0">
+                    <rect key="frame" x="97" y="5" width="82" height="35"/>
+                    <state key="normal" backgroundImage="sharesp"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fc0-lb-Bk4">
+                    <rect key="frame" x="187" y="5" width="82" height="35"/>
+                    <state key="normal" backgroundImage="wuliu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp2-kX-Zdt">
+                    <rect key="frame" x="277" y="5" width="82" height="35"/>
+                    <state key="normal" backgroundImage="quxiao"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="leading" secondItem="Fc0-lb-Bk4" secondAttribute="trailing" constant="8" symbolic="YES" id="3DT-Wj-aK5"/>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="firstBaseline" secondItem="yxU-cw-bl0" secondAttribute="firstBaseline" id="IFi-J2-nm3"/>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="baseline" secondItem="yxU-cw-bl0" secondAttribute="baseline" id="KZ5-7a-Qcn"/>
+                <constraint firstItem="Fc0-lb-Bk4" firstAttribute="baseline" secondItem="yxU-cw-bl0" secondAttribute="baseline" id="NFI-8w-LCW"/>
+                <constraint firstItem="yxU-cw-bl0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QKd-27-DmS"/>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="baseline" secondItem="Fc0-lb-Bk4" secondAttribute="baseline" id="bho-xJ-XBa"/>
+                <constraint firstItem="yxU-cw-bl0" firstAttribute="top" secondItem="Fc0-lb-Bk4" secondAttribute="top" id="dUP-9L-kOl"/>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="n40-WA-62a"/>
+                <constraint firstItem="Fc0-lb-Bk4" firstAttribute="firstBaseline" secondItem="yxU-cw-bl0" secondAttribute="firstBaseline" id="rgB-EJ-ciY"/>
+                <constraint firstItem="Fc0-lb-Bk4" firstAttribute="top" secondItem="Fp2-kX-Zdt" secondAttribute="top" id="tGo-nk-b8B"/>
+                <constraint firstItem="Fc0-lb-Bk4" firstAttribute="leading" secondItem="yxU-cw-bl0" secondAttribute="trailing" constant="8" symbolic="YES" id="vji-X2-ZFR"/>
+                <constraint firstItem="Fp2-kX-Zdt" firstAttribute="firstBaseline" secondItem="Fc0-lb-Bk4" secondAttribute="firstBaseline" id="y8R-0G-PMj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button1" destination="yxU-cw-bl0" id="jCL-I5-Leq"/>
+                <outlet property="button2" destination="Fc0-lb-Bk4" id="Quc-qI-F7b"/>
+                <outlet property="button3" destination="Fp2-kX-Zdt" id="mxm-bZ-r4m"/>
+            </connections>
+            <point key="canvasLocation" x="-206" y="-96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quxiao" width="82" height="35"/>
+        <image name="sharesp" width="82" height="35"/>
+        <image name="wuliu" width="82" height="35"/>
+    </resources>
+</document>

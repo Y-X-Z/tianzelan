@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTGViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-EH-ASg">
+                    <rect key="frame" x="0.0" y="87" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="P5G-Rf-YNE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-iC-FnX">
+                    <rect key="frame" x="331" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Sbd-zt-6vH"/>
+                    </constraints>
+                    <state key="normal" image="share"/>
+                    <connections>
+                        <action selector="shareto:" destination="-1" eventType="touchUpInside" id="DGb-gX-p9p"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海豚购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-6d-rSC">
+                    <rect key="frame" x="156" y="54" width="62" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="Mhh-01-f4L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.85587340593338013" green="0.25186717510223389" blue="0.24702361226081848" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TO2-6d-rSC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="4Uo-bA-tMs"/>
+                <constraint firstItem="AVe-EH-ASg" firstAttribute="bottom" secondItem="0S8-iC-FnX" secondAttribute="bottom" id="EtJ-6X-3pm"/>
+                <constraint firstItem="AVe-EH-ASg" firstAttribute="top" secondItem="TO2-6d-rSC" secondAttribute="bottom" constant="14" id="P8M-28-nhH"/>
+                <constraint firstItem="0S8-iC-FnX" firstAttribute="trailing" secondItem="AVe-EH-ASg" secondAttribute="trailing" id="TtH-iP-YRo"/>
+                <constraint firstItem="TO2-6d-rSC" firstAttribute="centerX" secondItem="AVe-EH-ASg" secondAttribute="centerX" id="hCf-S8-H3G"/>
+                <constraint firstItem="0S8-iC-FnX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="jfP-B8-qf7"/>
+                <constraint firstItem="AVe-EH-ASg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nwm-pQ-2pu"/>
+                <constraint firstAttribute="trailing" secondItem="0S8-iC-FnX" secondAttribute="trailing" id="sIz-3P-dEq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-25" y="-536"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share" width="20" height="20"/>
+    </resources>
+</document>
